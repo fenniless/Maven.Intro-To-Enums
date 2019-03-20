@@ -1,17 +1,25 @@
 package com.zipcodewilmington.preassessment2;
 
 public class AliceBobEvaluator {
-
+private String name;
 
     public AliceBobEvaluator(String input) {
-
+        this.name = input;
     }
 
     public boolean isAlice() {
-        return false;
+        if (name.equals("Alice")){
+            return true;
+        } else {
+            return false;
+        }
     }
 
     public boolean isBob() {
-        return false;
+        if (name.equals("Bob")){
+            return true;
+        } else {
+            return false;
+        }
     }
 }
